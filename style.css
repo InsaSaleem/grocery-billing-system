@@ -1,0 +1,128 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    url('https://cdn.shopify.com/s/files/1/0070/7032/articles/subscription-ecommerce.png?v=1738939214&originalWidth=1848&originalHeight=782&width=1800');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 420px;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #222;
+  position: relative;
+  z-index: 10;
+}
+
+/* Intro Card for welcome message */
+.intro-card {
+  background-color: rgba(0, 0, 0, 0.3); /* Darker semi-transparent overlay */
+  padding: 20px;
+  border-radius: 12px;
+  color: white !important;
+  text-align: center;
+  margin-bottom: 25px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.intro-card h3,
+.intro-card p {
+  color: white !important;
+  font-size: 1rem;
+}
+
+/* Main Title */
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Menu Buttons */
+.menu {
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 18px 0;
+}
+
+.menu a {
+  display: block;
+  background-color: #a881ba;
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+  padding: 14px 0;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #357ABD;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(53, 122, 189, 0.5);
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    max-width: 90vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .menu a {
+    font-size: 1rem;
+  }
+}
+
+.btn-back-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #041367;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back-home:hover {
+  background-color: #6b82e9;
+  color: #041367;
+}

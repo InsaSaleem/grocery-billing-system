@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grocery Billing System</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+     
+  font-family: 'Roboto', Arial, sans-serif;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://cdn.shopify.com/s/files/1/0070/7032/articles/subscription-ecommerce.png?v=1738939214&originalWidth=1848&originalHeight=782&width=1800');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    }
+
+
+    
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.265);
+      max-width: 420px;
+      width: 100%;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #222;
+      position: relative;
+      z-index: 10;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      letter-spacing: 1.2px;
+    }
+
+    h1 i {
+      margin-right: 8px;
+      color: #6c2ae8;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #c0a8ed, #c9a2ed, #bda390);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    .intro-card {
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      color: #222;
+      text-align: center;
+      margin-bottom: 25px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .intro-card h3,
+    .intro-card p {
+      font-size: 1rem;
+    }
+
+    .menu {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 18px 0;
+    }
+
+    .menu a {
+      display: block;
+      background-color: #a881ba;
+      color: rgb(243, 243, 243);
+      text-decoration: none;
+      padding: 14px 0;
+      border-radius: 10px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(74, 144, 226, 0.3);
+    }
+
+    .menu a:hover,
+    .menu a:focus {
+      background-color: #357abd;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(53, 122, 189, 0.5);
+      outline: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px;
+        max-width: 90vw;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .menu a {
+        font-size: 1rem;
+      }
+    }
+
+    .btn-back-home {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #041367;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-back-home:hover {
+      background-color: #6b82e9;
+      color: #041367;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Grocery Billing System Title -->
+    <h1>
+      <i class="fas fa-store"></i> 
+      <span>Grocery Billing System</span>
+    </h1>
+
+    <!-- Welcome Card -->
+    <div class="intro-card">
+      <h3>Welcome to Grocery Billing System</h3>
+      <p>Manage your store with ease — customers, employees, products, and bills all in one place.</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul class="menu">
+        <li><a href="insert_customer.php"><i class="fas fa-user"></i> Insert Customer</a></li>
+        <li><a href="All_tables.php"><i class="fas fa-table"></i> Tables</a></li>
+        <li><a href="joins.php"><i class="fas fa-credit-card"></i> Joins Tables</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+</body>
+</html>
