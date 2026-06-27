@@ -3,10 +3,10 @@
 
 A web-based Grocery Management System developed to automate grocery store operations, including inventory management, customer handling, billing, and payment processing. The application simplifies day-to-day store management by providing a centralized platform for managing products, customers, employees, and transactions.
 
----
+
 # 📌 Project Overview
 The Grocery Management System is designed to replace manual record-keeping with a digital solution that improves efficiency, accuracy, and data integrity. It enables grocery stores to manage products, customers, billing, and payments through a user-friendly web interface backed by a relational database.
----
+
 
 ## ✨ Features
 - 👤 Customer Registration & Management
