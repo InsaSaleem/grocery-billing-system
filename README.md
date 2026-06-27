@@ -4,7 +4,7 @@
 A web-based Grocery Management System developed to automate grocery store operations, including inventory management, customer handling, billing, and payment processing. The application simplifies day-to-day store management by providing a centralized platform for managing products, customers, employees, and transactions.
 
 ---
-## 📌 Project Overview
+# 📌 Project Overview
 The Grocery Management System is designed to replace manual record-keeping with a digital solution that improves efficiency, accuracy, and data integrity. It enables grocery stores to manage products, customers, billing, and payments through a user-friendly web interface backed by a relational database.
 ---
 
@@ -101,16 +101,25 @@ Through this project, I gained practical experience in:
 ## 📂 Project Structure
 
 ```
-Grocery-Management-System/
+GROCERY-BILLING-SYSTEM/
 │
-├── css/
-├── images/
-├── includes/
-├── database/
-├── pages/
-├── index.php
-├── README.md
-└── assets/
+├── All_tables.php                # Display all database tables
+├── bill_detail_inner_join.php    # INNER JOIN query implementation
+├── bill_details_left.php         # LEFT JOIN query implementation
+├── bill_details_right.php        # RIGHT JOIN query implementation
+├── db.php                        # Database connection
+├── delete_record.php             # Delete records
+├── grocery-billing-system.sql    # Database schema
+├── index.html                    # Home page
+├── insert_category.php           # Add category
+├── insert_customer.php           # Add customer
+├── insert_employee.php           # Add employee
+├── insert_product.php            # Add product
+├── joins.php                     # SQL JOIN operations
+├── README.md                     # Project documentation
+├── style.css                     # Stylesheet
+├── update_record.php             # Update records
+└── view_table.php                # View database records
 ```
 
 ---
